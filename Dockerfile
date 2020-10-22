@@ -31,12 +31,8 @@ RUN cd /tmp && \
     cd .. && \
     rm -rf cppcheck-1.86*
 
-<<<<<<< HEAD
 RUN pip3.6 install --force-reinstall pip==9.0.3 && \
     pip3.6 install conan==1.30.2 coverage==4.4.2 flake8==3.5.0 gcovr==4.1 && \
-=======
-RUN pip3.6 install conan==1.22.2 coverage==4.4.2 flake8==3.5.0 gcovr==4.1 && \
->>>>>>> c06720b279269f5e48b032089524b235b0bcf9a1
     rm -rf /root/.cache/pip/*
 
 ENV CONAN_USER_HOME=/conan
